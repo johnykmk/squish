@@ -1,8 +1,10 @@
 package org.academiadecodigo.hackathon.heHadItComing.persistence.dao;
 
+import org.academiadecodigo.hackathon.heHadItComing.persistence.model.Model;
+
 import java.util.List;
 
-public interface Dao <T> {
+public interface Dao <T extends Model> {
 
     List<T> findAll();
 

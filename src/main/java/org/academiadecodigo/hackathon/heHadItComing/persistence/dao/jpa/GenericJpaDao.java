@@ -2,6 +2,7 @@ package org.academiadecodigo.hackathon.heHadItComing.persistence.dao.jpa;
 
 import org.academiadecodigo.hackathon.heHadItComing.persistence.dao.Dao;
 import org.academiadecodigo.hackathon.heHadItComing.persistence.model.Model;
+import org.academiadecodigo.hackathon.heHadItComing.persistence.model.User;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -9,7 +10,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import java.util.List;
 
-public abstract class GenericJpaDao<T extends Model> implements Dao {
+public abstract class GenericJpaDao<T extends Model> implements Dao<T> {
 
     protected Class<T> modelType;
 

@@ -5,11 +5,10 @@ import org.academiadecodigo.hackathon.heHadItComing.persistence.model.User;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class JpaUserDao {
+public class JpaUserDao extends GenericJpaDao<User> implements UserDao {
 
     public JpaUserDao () {
 
-       // super(User.class);
+        super(User.class);
     }
-
 }
