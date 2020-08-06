@@ -1,7 +1,7 @@
 <html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
     <head>
-
+       
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>He Had It Coming</title>
@@ -36,16 +36,18 @@
             </div>
         </nav>
         <div id="box">
+            <form th:object="${user}" th:action="@{/register}" method="post">
 
                 <h1>Sign Up!</h1>
-                <input id="UserNameTextBox" placeholder="Username">
-                <input id="PasswordTextBox" placeholder="Password">
-                <input id="FirstNameTextBox" placeholder="Firstname">
-                <input id="LastnameTextBox" placeholder="Lastname">
-                <input id="EmailTextBox" placeholder="Email">
-                <input id="PhoneTextBox" placeholder="Phone">
+                <input id="UserNameTextBox" placeholder="Username" th:field="*{username}">
+                <input id="PasswordTextBox" placeholder="Password" th:field="*{password}">
+                <input id="FirstNameTextBox" placeholder="Firstname" th:field="*{firstName}">
+                <input id="LastnameTextBox" placeholder="Lastname" th:field="*{lastName}">
+                <input id="EmailTextBox" placeholder="Email" th:field="*{email}">
+                <input id="PhoneTextBox" placeholder="Phone" th:field="*{phone}">
                 <button type="submit" name="action" value="save" class="btnLogin">Register</button>
-            
+
+            </form>
         </div>
 
     </body>
