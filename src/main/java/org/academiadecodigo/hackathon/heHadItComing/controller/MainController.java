@@ -1,6 +1,8 @@
 package org.academiadecodigo.hackathon.heHadItComing.controller;
 
+import org.academiadecodigo.hackathon.heHadItComing.command.UserDto;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -48,12 +50,13 @@ public class MainController {
         return "/login.css";
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = {"/register.html"})
-    public String showRegisterPage() {
+    @RequestMapping(method = RequestMethod.GET, path = {"user/register.html"})
+    public String showRegisterPage(Model model) {
+        model.addAttribute("user", new UserDto());
         return "/register.html";
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = {"/register.css"})
+    @RequestMapping(method = RequestMethod.GET, path = {"user/register.css"})
     public String getRegisterPageStyle() {
         return "/register.css";
     }
