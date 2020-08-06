@@ -55,6 +55,7 @@ public class UserController {
         return "/login.html";
     }
 
+
     @RequestMapping(method = RequestMethod.POST, path = "/login")
     public String authentication(@ModelAttribute("user")UserDto userDto) {
 

@@ -45,6 +45,7 @@ public class UserServiceImpl implements UserService{
         userDao.delete(id);
     }
 
+    @Transactional
     @Override
     public User findByUsername(String username) {
         return userDao.findByUsername(username);
