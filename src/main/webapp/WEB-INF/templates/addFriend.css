@@ -1,0 +1,71 @@
+body{
+    background-color: #222;
+}
+
+#textScene{
+    position: absolute;
+    top:17.5%;
+    left:0%;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#FirstNameTextBox{
+    position: absolute;
+    width:36%;
+    height: 5%;
+    left: 32%;
+    top: 30%;
+    border: none;
+}
+
+#LastNameTextBox{
+    position: absolute;
+    width:36%;
+    height: 5%;
+    left: 32%;
+    top: 40%;
+    border: none;
+}
+
+#EmailTextBox{
+    position: absolute;
+    width:36%;
+    height: 5%;
+    left: 32%;
+    top: 50%;
+    border: none;
+}
+
+#PhoneTextBox{
+    position: absolute;
+    width:36%;
+    height: 5%;
+    left: 32%;
+    top: 60%;
+    border: none;
+}
+
+.buttonSubmit{
+    position: absolute;
+    width:36%;
+    height: 5%;
+    left: 32%;
+    top: 70%;
+    border: none;
+    color: white;
+    background-color: red;
+}
+
+.buttonNoFriend{
+    position: absolute;
+    width:36%;
+    height: 5%;
+    left: 32%;
+    top: 80%;
+    border: none;
+    color: black;
+    background-color: green;
+}
+

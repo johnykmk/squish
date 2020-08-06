@@ -71,6 +71,16 @@ public class MainController {
         return "/weapons.html";
     }
 
+    @RequestMapping(method = RequestMethod.GET, path = {"/about.html"})
+    public String showAboutUsPage() {
+        return "/about.html";
+    }
+
+    @RequestMapping(method = RequestMethod.GET, path = {"/about.css"})
+    public String getAboutUsPageStyle() {
+        return "about.css";
+    }
+
     @Autowired
     public void setUserService(UserService userService) {
         this.userService = userService;
