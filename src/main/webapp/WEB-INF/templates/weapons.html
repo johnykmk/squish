@@ -1,4 +1,5 @@
 <html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,8 +18,8 @@
             <div class="navigation" role="navigation">
                 <div class="nav-bar">
                     <div class="logo">
-                        <a href="index.html">
-                            <img src="resources/logo.png" width="100" style="display: inline-block; ">
+                        <a th:href="@{/}">
+                            <img src="https://trello-attachments.s3.amazonaws.com/5f2c1168158328657acdac84/600x455/918f66ca1794cf220b2ceb9d14aa863b/logo.png" width="100" style="display: inline-block; ">
                         </a>
                     </div>
                     <ul>
