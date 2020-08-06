@@ -4,6 +4,7 @@ import org.academiadecodigo.hackathon.heHadItComing.command.UserDto;
 import org.academiadecodigo.hackathon.heHadItComing.converters.UserDtoToUser;
 import org.academiadecodigo.hackathon.heHadItComing.converters.UserToUserDto;
 import org.academiadecodigo.hackathon.heHadItComing.persistence.model.User;
+import org.academiadecodigo.hackathon.heHadItComing.service.UserService;
 import org.academiadecodigo.hackathon.heHadItComing.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,12 +17,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @RequestMapping("/user")
 public class UserController {
 
-    private UserServiceImpl userService;
+    private UserService userService;
     private UserDtoToUser userDtoToUser;
     private UserToUserDto userToUserDto;
 
     @Autowired
-    public void setUserService(UserServiceImpl userService) {
+    public void setUserService(UserService userService) {
         this.userService = userService;
     }
 
