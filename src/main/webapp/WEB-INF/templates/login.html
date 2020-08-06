@@ -39,10 +39,11 @@
                     <input id="UserNameTextBox" placeholder="UserName" th:field="*{username}"><br><br>
                     <input id="PasswordTextBox" placeholder="Password" th:field="*{password}">
                 <button type="submit" name="action" value="save" class="btnLogin" >Login</button>
-            </form>
+
             <div id="SignUp">
                 <p>Not a member? <span style="color: black;"><a th:href="@{user/register.html}"> Sign up!</a></span></p>
             </div>
+            </form>
         </div>
     </body>
 </html>
