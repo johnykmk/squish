@@ -36,14 +36,16 @@ public class MainController {
     /*@RequestMapping(method = RequestMethod.GET, path = {"/loginStyle.css"})
     public String getLoginStyle() {
         return "/login.css";
-    }/*
-    /*@RequestMapping(method = RequestMethod.GET, path = {"", "/"})
-    public String getLogo() {
-        return "resources/logo.png";
     }*/
 
-    /*@RequestMapping(method = RequestMethod.GET, path = {"", "/"})
+
+    @RequestMapping(method = RequestMethod.GET, path = {"/logo.jpg"})
+    public String getLogo() {
+        return "logo.png";
+    }
+
+    @RequestMapping(method = RequestMethod.GET, path = {"", "/"})
     public String getHomepageImage() {
-        return "resources/homepage.mp4";
-    }*/
+        return "homepage.mp4";
+    }
 }
