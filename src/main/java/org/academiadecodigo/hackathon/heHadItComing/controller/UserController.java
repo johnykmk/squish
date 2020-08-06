@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/user")
 public class UserController {
 
     private UserService userService;
@@ -36,13 +35,13 @@ public class UserController {
         this.userToUserDto = userToUserDto;
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = "user/register.html")
+    @RequestMapping(method = RequestMethod.GET, path = "/register.html")
     public String addUser(Model model) {
         model.addAttribute("user", new UserDto());
         return "/register.html";
     }
 
-    @RequestMapping(method = RequestMethod.POST, path = {"user/register.html"})
+    @RequestMapping(method = RequestMethod.POST, path = {"/register.html"})
     public String saveCustomer(@ModelAttribute("user")UserDto userDto) {
 
         userService.add(userDtoToUser.convert(userDto));
@@ -50,14 +49,14 @@ public class UserController {
         return "redirect:/index.html";
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = "user/login")
+    @RequestMapping(method = RequestMethod.GET, path = "/login")
     public String getCustomer(Model model) {
         model.addAttribute("user", new UserDto());
         return "/login.html";
     }
 
 
-    @RequestMapping(method = RequestMethod.POST, path = "user/login")
+    @RequestMapping(method = RequestMethod.POST, path = "/login")
     public String authentication(@ModelAttribute("user")UserDto userDto) {
 
         User loginUser = userDtoToUser.convert(userDto);
