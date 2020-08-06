@@ -55,6 +55,6 @@ public class MainController {
 
     @RequestMapping(method = RequestMethod.GET, path = {"/register.css"})
     public String getRegisterPageStyle() {
-        return "register.css";
+        return "/register.css";
     }
 }
