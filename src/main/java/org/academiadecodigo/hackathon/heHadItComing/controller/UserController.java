@@ -36,13 +36,13 @@ public class UserController {
         this.userToUserDto = userToUserDto;
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = "/register")
+    @RequestMapping(method = RequestMethod.GET, path = "/register.html")
     public String addCustomer(Model model) {
         model.addAttribute("user", new UserDto());
         return "/register.html";
     }
 
-    @RequestMapping(method = RequestMethod.POST, path = {"/register"})
+    @RequestMapping(method = RequestMethod.POST, path = {"/register.html"})
     public String saveCustomer(@ModelAttribute("user")UserDto userDto) {
 
         userService.add(userDtoToUser.convert(userDto));
