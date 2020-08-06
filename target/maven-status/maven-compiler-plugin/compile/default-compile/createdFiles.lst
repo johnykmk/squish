@@ -1,0 +1,7 @@
+org\academiadecodigo\hackathon\heHadItComing\persistence\model\Model.class
+org\academiadecodigo\hackathon\heHadItComing\persistence\dao\jpa\JpaUserDao.class
+org\academiadecodigo\hackathon\heHadItComing\SpringBootstrap.class
+org\academiadecodigo\hackathon\heHadItComing\persistence\dao\UserDao.class
+org\academiadecodigo\hackathon\heHadItComing\persistence\dao\jpa\GenericJpaDao.class
+org\academiadecodigo\hackathon\heHadItComing\persistence\model\User.class
+org\academiadecodigo\hackathon\heHadItComing\persistence\dao\Dao.class
