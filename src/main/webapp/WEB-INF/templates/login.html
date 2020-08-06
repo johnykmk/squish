@@ -1,4 +1,5 @@
 <html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,10 +34,11 @@
             </div>
         </nav>
         <div id="box">
-            <h1>Login</h1>
-            <input id="UserNameTextBox" placeholder="UserName"><br><br>
-            <input id="PasswordTextBox" placeholder="Password">
-            <button class="btnLogin">Login</button>
+            <form th:object="${user}" th:action="@{/login}" method="post">
+                <h1>Login</h1>
+                    <input id="UserNameTextBox" placeholder="UserName"><br><br>
+                    <input id="PasswordTextBox" placeholder="Password">
+                <button class="btnLogin">Login</button>
             <div id="SignUp">
                 <p>Not a member? <span style="color: black;"><a href="register.html"> Sign up!</a></span></p>
             </div>

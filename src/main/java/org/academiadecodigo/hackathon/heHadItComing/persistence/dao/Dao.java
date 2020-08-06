@@ -13,4 +13,6 @@ public interface Dao <T extends Model> {
     T saveOrUpdate(T modelObject);
 
     void delete(Integer id);
+
+    T findByUsername(String username);
 }

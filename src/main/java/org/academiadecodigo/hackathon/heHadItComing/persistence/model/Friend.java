@@ -10,10 +10,11 @@ import java.util.Date;
 @Table(name = "friend")
 public class Friend implements Model{
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-
+    private String password;
     private String firstName;
     private String lastName;
     private String email;
@@ -40,6 +41,22 @@ public class Friend implements Model{
     @Override
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public String getFirstName() {
