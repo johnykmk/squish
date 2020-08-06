@@ -23,7 +23,7 @@ public class MainController {
         return "/homepage.css";
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = "/scenes.html")
+    @RequestMapping(method = RequestMethod.GET, path = {"/scenes.html"})
     public String showShop() {
         return "/scenes.html";
     }
@@ -48,12 +48,12 @@ public class MainController {
         return "/login.css";
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = ("/register.html"))
+    @RequestMapping(method = RequestMethod.GET, path = {"/register.html"})
     public String showRegisterPage() {
         return "/register.html";
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = "register.css")
+    @RequestMapping(method = RequestMethod.GET, path = {"/register.css"})
     public String getRegisterPageStyle() {
         return "register.css";
     }
