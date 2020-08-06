@@ -78,7 +78,7 @@ public class MainController {
 
     @RequestMapping(method = RequestMethod.GET, path = {"/about.css"})
     public String getAboutUsPageStyle() {
-        return "about.css";
+        return "/about.css";
     }
 
     @Autowired
