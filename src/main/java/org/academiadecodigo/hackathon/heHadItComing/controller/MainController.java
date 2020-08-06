@@ -47,4 +47,14 @@ public class MainController {
     public String getLoginStyle() {
         return "/login.css";
     }
+
+    @RequestMapping(method = RequestMethod.GET, path = ("/register.html"))
+    public String showRegisterPage() {
+        return "/register.html";
+    }
+
+    @RequestMapping(method = RequestMethod.GET, path = "register.css")
+    public String getRegisterPageStyle() {
+        return "register.css";
+    }
 }
