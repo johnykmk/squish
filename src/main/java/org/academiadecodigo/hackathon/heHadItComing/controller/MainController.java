@@ -14,12 +14,12 @@ public class MainController {
     }
 
     @RequestMapping(method = RequestMethod.GET, path = {"/navbar.css"})
-    public String navbarStyle() {
+    public String getNavbarStyle() {
         return "/navbar.css";
     }
 
     @RequestMapping(method = RequestMethod.GET, path = {"/homepage.css"})
-    public String homepageStyle() {
+    public String getHomepageStyle() {
         return "/homepage.css";
     }
 
@@ -28,6 +28,15 @@ public class MainController {
         return "/scenes.html";
     }
 
+    @RequestMapping(method = RequestMethod.GET, path = {"/shop.css"})
+    public String getScenesStyle() {
+        return "/shop.css";
+    }
+
+    @RequestMapping(method = RequestMethod.GET, path = {"/normalize.css"})
+    public String getNormalizeStyle() {
+        return "/normalize.css";
+    }
 
     /*@RequestMapping(method = RequestMethod.GET, path = {"/login"})
     public String redirectTest() {
