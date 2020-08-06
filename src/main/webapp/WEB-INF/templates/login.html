@@ -36,8 +36,8 @@
         <div id="box">
             <form th:object="${user}" th:action="@{/login.html}" method="post">
                 <h1>Login</h1>
-                    <input id="UserNameTextBox" placeholder="UserName" th:field="*{username}"><br><br>
-                    <input id="PasswordTextBox" placeholder="Password" th:field="*{password}">
+                    <input id="UserNameTextBox" placeholder="UserName"><br><br>
+                    <input id="PasswordTextBox" placeholder="Password">
                 <button type="submit" name="action" value="save" class="btnLogin" >Login</button>
 
             <div id="SignUp">
