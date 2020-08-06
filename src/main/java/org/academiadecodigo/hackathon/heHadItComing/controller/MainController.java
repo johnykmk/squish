@@ -44,8 +44,8 @@ public class MainController {
         return "logo.png";
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = {"", "/"})
+    /*@RequestMapping(method = RequestMethod.GET, path = {"", "/"})
     public String getHomepageImage() {
         return "homepage.mp4";
-    }
+    }*/
 }
