@@ -101,7 +101,7 @@ public class MainController {
         return "/login.html";
     }
 
-    @RequestMapping(method = RequestMethod.POST, path = "/login")
+    @RequestMapping(method = RequestMethod.POST, path = "/login.html")
     public String authentication(@ModelAttribute("user")UserDto userDto) {
 
         User loginUser = userDtoToUser.convert(userDto);
