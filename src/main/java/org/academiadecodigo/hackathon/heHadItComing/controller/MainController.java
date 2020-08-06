@@ -87,7 +87,7 @@ public class MainController {
     }
 
 
-    @RequestMapping(method = RequestMethod.POST, path = {"/register.html"})
+    @RequestMapping(method = RequestMethod.POST, path = {"/register"})
     public String saveCustomer(@ModelAttribute("user")UserDto userDto) {
 
         userService.add(userDtoToUser.convert(userDto));
