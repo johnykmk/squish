@@ -92,7 +92,7 @@ public class MainController {
 
         userService.add(userDtoToUser.convert(userDto));
 
-        return "redirect:/index.html";
+        return "redirect:/";
     }
 
     @RequestMapping(method = RequestMethod.GET, path = "/login")
