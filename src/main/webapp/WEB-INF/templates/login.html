@@ -34,7 +34,7 @@
             </div>
         </nav>
         <div id="box">
-            <form th:object="${user}" th:action="@{user/login.html}" method="post">
+            <form th:object="${user}" th:action="@{/login.html}" method="post">
                 <h1>Login</h1>
                     <input id="UserNameTextBox" placeholder="UserName" th:field="*{username}"><br><br>
                     <input id="PasswordTextBox" placeholder="Password" th:field="*{password}">
