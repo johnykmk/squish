@@ -1,7 +1,7 @@
 <html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
     <head>
-        <thymeleaf th:replace="header :: header" />
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>He Had It Coming</title>
@@ -36,7 +36,6 @@
             </div>
         </nav>
         <div id="box">
-            <form th:object="${user}" th:action="@{/register}" method="post">
 
                 <h1>Sign Up!</h1>
                 <input id="UserNameTextBox" placeholder="Username">
@@ -46,8 +45,7 @@
                 <input id="EmailTextBox" placeholder="Email">
                 <input id="PhoneTextBox" placeholder="Phone">
                 <button type="submit" name="action" value="save" class="btnLogin">Register</button>
-
-            </form>
+            
         </div>
 
     </body>
