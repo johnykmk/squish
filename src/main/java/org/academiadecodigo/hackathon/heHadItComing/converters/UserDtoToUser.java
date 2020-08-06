@@ -2,6 +2,7 @@ package org.academiadecodigo.hackathon.heHadItComing.converters;
 
 import org.academiadecodigo.hackathon.heHadItComing.command.UserDto;
 import org.academiadecodigo.hackathon.heHadItComing.persistence.model.User;
+import org.academiadecodigo.hackathon.heHadItComing.service.UserService;
 import org.academiadecodigo.hackathon.heHadItComing.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.convert.converter.Converter;
@@ -10,10 +11,10 @@ import org.springframework.stereotype.Component;
 @Component
 public class UserDtoToUser implements Converter<UserDto, User> {
 
-    private UserServiceImpl userService;
+    private UserService userService;
 
     @Autowired
-    public void setUserService(UserServiceImpl userService) {
+    public void setUserService(UserService userService) {
         this.userService = userService;
     }
 
