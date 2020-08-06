@@ -81,6 +81,16 @@ public class MainController {
         return "/about.css";
     }
 
+    @RequestMapping(method = RequestMethod.GET, path = {"/addFriend.html"})
+    public String showAddFriendPage() {
+        return "/addFriend.html";
+    }
+
+    @RequestMapping(method = RequestMethod.GET, path = {"/addFriend.css"})
+    public String showAddFriendPageStyle() {
+        return "/addFriend.css";
+    }
+
     @Autowired
     public void setUserService(UserService userService) {
         this.userService = userService;
