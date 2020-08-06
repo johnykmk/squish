@@ -1,0 +1,54 @@
+body{
+    background-color: #222;
+}
+
+#box{
+    position: absolute;
+    width: 30%;
+    height:60%;
+    top:20%;
+    left:35%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding-top: 5%;;
+}
+
+#UsernameTextBox{
+    position: absolute;
+    width:80%;
+    height: 10%;
+    left: 10%;
+    top: 30%;
+    border: none;
+}
+
+#PasswordTextBox{
+    position: absolute;
+    width:80%;
+    height: 10%;
+    left: 10%;
+    top: 45%;
+    border: none;
+}
+
+.btnLogin{
+    position: absolute;
+    width:80%;
+    height: 10%;
+    left: 10%;
+    top: 60%;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+#SignUp{
+    position: absolute;
+    width:80%;
+    height: 10%;
+    left: 10%;
+    top: 75%;
+    text-align: center;
+    border: none;
+}

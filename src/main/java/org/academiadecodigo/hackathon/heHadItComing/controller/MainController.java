@@ -38,19 +38,13 @@ public class MainController {
         return "/normalize.css";
     }
 
-    /*@RequestMapping(method = RequestMethod.GET, path = {"/login"})
+    @RequestMapping(method = RequestMethod.GET, path = {"/login"})
     public String redirectTest() {
         return "/login.html";
-    }*/
+    }
 
-    /*@RequestMapping(method = RequestMethod.GET, path = {"/loginStyle.css"})
+    @RequestMapping(method = RequestMethod.GET, path = {"/login.css"})
     public String getLoginStyle() {
         return "/login.css";
-    }*/
-
-
-    /*@RequestMapping(method = RequestMethod.GET, path = {"", "/"})
-    public String getHomepageImage() {
-        return "homepage.mp4";
-    }*/
+    }
 }
