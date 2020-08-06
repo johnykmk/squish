@@ -10,22 +10,22 @@ public class MainController {
 
     @RequestMapping(method = RequestMethod.GET, path = {"", "/"})
     public String showHomepage() {
-        return "templates/index.html";
+        return "/index.html";
     }
 
     @RequestMapping(method = RequestMethod.GET, path = {"/navbar.css"})
     public String navbarStyle() {
-        return "templates/navbar.css";
+        return "/navbar.css";
     }
 
     @RequestMapping(method = RequestMethod.GET, path = {"/homepage.css"})
     public String homepageStyle() {
-        return "templates/homepage.css";
+        return "/homepage.css";
     }
 
-    @RequestMapping(method = RequestMethod.GET, path = "/shop.html")
+    @RequestMapping(method = RequestMethod.GET, path = "/scenes.html")
     public String showShop() {
-        return "templates/shop.html";
+        return "/scenes.html";
     }
 
 
@@ -39,11 +39,6 @@ public class MainController {
         return "/login.css";
     }*/
 
-
-    @RequestMapping(method = RequestMethod.GET, path = {"/logo.png"})
-    public String getLogo() {
-        return "resources/logo.png";
-    }
 
     /*@RequestMapping(method = RequestMethod.GET, path = {"", "/"})
     public String getHomepageImage() {
