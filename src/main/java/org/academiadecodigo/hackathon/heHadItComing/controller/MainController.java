@@ -39,10 +39,10 @@ public class MainController {
     }*/
 
 
-    @RequestMapping(method = RequestMethod.GET, path = {"/logo.png"})
+    /*@RequestMapping(method = RequestMethod.GET, path = {"/logo.png"})
     public String getLogo() {
         return "/resources/logo.png";
-    }
+    }*/
 
     /*@RequestMapping(method = RequestMethod.GET, path = {"", "/"})
     public String getHomepageImage() {
