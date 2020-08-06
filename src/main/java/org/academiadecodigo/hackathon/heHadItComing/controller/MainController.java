@@ -57,4 +57,9 @@ public class MainController {
     public String getRegisterPageStyle() {
         return "/register.css";
     }
+
+    @RequestMapping(method = RequestMethod.GET, path = {"/weapons.html"})
+    public String showWeapons() {
+        return "/weapons.html";
+    }
 }
