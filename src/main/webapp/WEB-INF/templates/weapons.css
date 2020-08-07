@@ -66,9 +66,16 @@ body{
     position: absolute;
     width: 30%;
     height: 5%;
-    border: none;
-    border: 2px solid #000;
+    border: 2px solid red;
+    background-color: #222;
+    color: white;
 }
+
+.button:hover{
+    background-color:red;
+    color:white;
+}
+
 
 .button1{
     top: 35%;
