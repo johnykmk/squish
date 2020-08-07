@@ -6,8 +6,8 @@
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="navbar.css">
         <link rel="stylesheet" href="motives.css">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="navbar">
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;700&display=swap" rel="stylesheet">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
           
     </head>
@@ -52,22 +52,7 @@
             <label for="motive7" class="motivesopt">Doesn’t do shit at home! All he says is: “I have to fix the GIT”.</label><br><br>
         </div>
 
-        <a href="scenes.html"><button type="submit" class="button">Motivos escolhidos?</button></a>
+        <a href="scenes.html"><button type="submit" class="button"></button></a>
 
-    <script>
-        document.getElementById('submit').onclick = function(){
-
-            let motive1 = document.getElementById('motive1')
-            if(motive1.is(":checked")){
-                motive1 = 1;
-                alert(document.querySelector('input[type=checkbox][name=motive1]:checked').value)
-            } else{
-                alert("shiiiit")
-            }
-        }
-
-        motivation();
-
-    </script>
     </body>
 </html>
