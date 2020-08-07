@@ -36,31 +36,31 @@
             <h1>Why you want your husband to be killed?</h1>
         </div>
         <div id="motives">
-            <input type="checkbox" id="motive1" name="vehicle1" value="Bike">
+            <input type="checkbox" id="motive1" name="motive1" value="Bike">
             <label for="motive1" class="motivesopt"> He’s popping gum next to me like an UZI!</label><br><br>
-            <input type="checkbox" id="motive2" name="vehicle1" value="Bike">
+            <input type="checkbox" id="motive2" name="motive2" value="Bike">
             <label for="motive2" class="motivesopt"> He doesn’t let me have my hobbies…</label><br><br>
-            <input type="checkbox" id="motive3" name="vehicle1" value="Bike">
+            <input type="checkbox" id="motive3" name="motive3" value="Bike">
             <label for="motive3" class="motivesopt"> Cheating on me recursively!</label><br><br>
-            <input type="checkbox" id="motive4" name="vehicle1" value="Bike">
+            <input type="checkbox" id="motive4" name="motive4" value="Bike">
             <label for="motive4" class="motivesopt"> Lies, lies and more lies...  I wonder if truth is even a thing?</label><br><br>
-            <input type="checkbox" id="motive5" name="vehicle1" value="Bike">
+            <input type="checkbox" id="motive5" name="motive5" value="Bike">
             <label for="motive5" class="motivesopt">Cheating on me… With my SISTER!!!</label><br><br>
-            <input type="checkbox" id="motive6" name="vehicle1" value="Bike">
+            <input type="checkbox" id="motive6" name="motive6" value="Bike">
             <label for="motive6" class="motivesopt">Jealousy is a big issue… too big for comfort actually.</label><br><br>
-            <input type="checkbox" id="motive7" name="vehicle1" value="Bike">
+            <input type="checkbox" id="motive7" name="motive7" value="Bike">
             <label for="motive7" class="motivesopt">Doesn’t do shit at home! All he says is: “I have to fix the GIT”.</label><br><br>
         </div>
 
-        <a href="scenes.html"><button class="button">Motivos escolhidos?</button></a>
+        <a href="scenes.html"><button type="submit" class="button">Motivos escolhidos?</button></a>
 
     <script>
-        function motivation(){
+        document.getElementById('submit').onclick = function(){
 
             let motive1 = document.getElementById('motive1')
             if(motive1.is(":checked")){
                 motive1 = 1;
-                alert(motive1)
+                alert(document.querySelector('input[type=checkbox][name=motive1]:checked').value)
             } else{
                 alert("shiiiit")
             }
