@@ -106,6 +106,11 @@ public class MainController {
         return "/motives.css";
     }
 
+    @RequestMapping(method = RequestMethod.GET, path = {"/jobDone.html"})
+    public String showJobDonePage() {
+        return "/jobDone.html";
+    }
+
     @Autowired
     public void setUserService(UserService userService) {
         this.userService = userService;
