@@ -55,14 +55,18 @@
         <a href="scenes.html"><button class="button">Motivos escolhidos?</button></a>
 
     <script>
-        let motive1 = document.getElementById('motive1')
-        if(motive1.is(":checked")){
-            motive1 = 1;
-            alert(motive1)
-        } else{
-            alert("shiiiit")
+        function motivation(){
+
+            let motive1 = document.getElementById('motive1')
+            if(motive1.is(":checked")){
+                motive1 = 1;
+                alert(motive1)
+            } else{
+                alert("shiiiit")
+            }
         }
 
+        motivation();
 
     </script>
     </body>
