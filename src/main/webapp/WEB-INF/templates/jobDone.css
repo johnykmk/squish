@@ -3,12 +3,18 @@ body {
 }
 
 #text {
-    margin-top: 10%;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    width: 100%;
     color: white;
     text-align: center;
     font-size: 30px;
 }
 .video1{
+    position: absolute;
+    top:40%;
+    left:30%;
     display: flex;
     justify-content: center;
 }

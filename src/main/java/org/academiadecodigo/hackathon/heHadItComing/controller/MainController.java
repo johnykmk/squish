@@ -107,8 +107,18 @@ public class MainController {
     }
 
     @RequestMapping(method = RequestMethod.GET, path = {"/jobDone.html"})
-    public String showJobDonePage() {
+    public String showJobDone() {
         return "/jobDone.html";
+    }
+
+    @RequestMapping(method = RequestMethod.GET, path = {"/registerVideo.html"})
+    public String showRegisterVideo() {
+        return "/RegisterVideo.html";
+    }
+
+    @RequestMapping(method = RequestMethod.GET, path = {"/loginVideo.html"})
+    public String showLoginVideo() {
+        return "/loginVideo.html";
     }
 
     @Autowired
