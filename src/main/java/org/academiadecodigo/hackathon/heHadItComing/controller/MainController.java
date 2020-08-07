@@ -67,8 +67,13 @@ public class MainController {
     }
 
     @RequestMapping(method = RequestMethod.GET, path = {"/weapons.html"})
-    public String showWeapons() {
+    public String showWeaponsPage() {
         return "/weapons.html";
+    }
+
+    @RequestMapping(method = RequestMethod.GET, path = {"/weapons.css"})
+    public String showWeaponsPageStyle() {
+        return "/weapons.css";
     }
 
     @RequestMapping(method = RequestMethod.GET, path = {"/about.html"})
