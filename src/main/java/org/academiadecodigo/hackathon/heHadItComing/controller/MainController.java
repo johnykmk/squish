@@ -96,6 +96,16 @@ public class MainController {
         return "/addFriend.css";
     }
 
+    @RequestMapping(method = RequestMethod.GET, path = {"/motives.html"})
+    public String showMotivesPage() {
+        return "/motives.html";
+    }
+
+    @RequestMapping(method = RequestMethod.GET, path = {"/motives.css"})
+    public String showMotivesPageStyle() {
+        return "/motives.css";
+    }
+
     @Autowired
     public void setUserService(UserService userService) {
         this.userService = userService;
